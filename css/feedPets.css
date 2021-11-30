@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.nav-teste {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  background-color: #08558b;
+  height: 10vh;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 1px;
+  margin-left: 32px;
+}
+
+.area-logo {
+  height: 50px;
+  width: 150px;
+}
+.logo {
+  position: absolute;
+  margin-top: 13px;
+  margin-left: 5px;
+}
+.logo-img {
+  position: relative;
+  height: 100%;
+  width: 33%;
+}
+.sair {
+  position: absolute;
+  font-size: 10px;
+  margin-top: 32px;
+  margin-left: 5px;
+}
+
+.pesquisar-box {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 15px;
+  border: 1px solid #08558b;
+  border-radius: 40px;
+  width: 600px;
+  height: 40px;
+  padding: 3px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pesquisar {
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 20px;
+  line-height: 40px;
+}
+.img-pesquisar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-box {
+  display: flex;
+  flex-direction: row;
+  padding-top: 120px;
+  padding: 100px;
+  align-items: center;
+  text-align: center;
+  max-width: 1045;
+  max-height: 215;
+  justify-content: space-around;
+}
+
+.card {
+  display: flex;
+  width: 200px;
+  height: 300px;
+  border-radius: 30px;
+}
+.icon-card {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+  border: 1px solid #08558b;
+}
+.informations-card {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  margin-top: 250px;
+  border-radius: 30px;
+  background-color: #08558b;
+  color: white;
+  text-align: center;
+  font-family: "Roboto";
+}
+
+.informations-card h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta nome="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tela de registro</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <a class="links" id="paracadastro"></a>
+      <a class="links" id="paralogin"></a>
+
+      <div class="content">
+        <div id="login">
+          <h1>Login</h1>
+
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            nome="email"
+            id="email"
+            placeholder="Digite seu email"
+            autocomplete="off"
+          />
+          <label for="password">Senha</label>
+          <input
+            type="password"
+            nome="password"
+            id="password"
+            placeholder="Digite sua senha"
+          />
+          <a href="#" id="forgot-pass">Esqueceu sua senha?</a>
+
+          <input type="submit" value="Login" onclick="validarLogin()" />
+
+          <a href="cadastro.html">Quero me cadastrar</a>
+        </div>
+      </div>
+    </div>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

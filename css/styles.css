@@ -1,0 +1,163 @@
+/* geral */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    color: #091424;
+    border: none;
+}
+
+body{
+    background-image: url('../img/background2.png');
+    background-size: cover;
+    background-position-y: 10px;
+    background-repeat: no-repeat;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+.content{
+    width: 550px;
+    min-height: 560px;    
+    margin: 0px auto;
+    position: relative;   
+  }
+
+
+  input {
+    outline: none;
+  }
+   
+
+  input:not([type="checkbox"]){
+    width: 95%;
+    margin-top: 4px;
+    padding: 10px;    
+    border: 1px solid #37009c;
+   
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+   
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+   
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+   
+
+  input[type="submit"]{
+    width: 95%;
+    cursor: pointer;  
+    background: rgb(41, 72, 250);
+    padding: 5px 2px;
+    color: rgb(220, 221, 228);
+    font-size: 15px;  
+    border: 0px ;   
+    margin-bottom: 0px;  
+    text-shadow: 0 1px 1px rgb(94, 94, 94);
+   
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+   
+    transition: all 0.2s linear;
+  }
+ 
+   
+  .link a {
+ 
+  
+    padding: 3px;
+    color: rgb(33, 34, 59);
+    margin-left: 1px;   
+    -webkit-border-radius: 1px;
+    border-radius: 0px;  
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s  linear;
+  }
+ 
+ 
+  
+  #cadastro, 
+    #login{
+  position: absolute;
+  top: 0px;
+  width: 90%;   
+  padding: 18px 6% 60px 6%;
+  margin: 0 0 35px 0;
+  background: #ffffff;
+  border: 3px solid ;
+   
+ 
+  border-radius: 6px;
+   
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+ 
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+#paracadastro:target ~ .content #cadastro,
+#paralogin:target ~ .content #login{
+  z-index: 2;
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+ 
+  -webkit-animation-delay: .1s;
+  animation-delay: .1s;
+}
+ 
+
+#registro:target ~ .content #login,
+#paralogin:target ~ .content #cadastro{
+  -webkit-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
+}
+@-webkit-keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+    }
+  }
+   
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+   
+  @-webkit-keyframes fadeOutLeft {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translateX(-20px);
+    }
+  }
+   
+  @keyframes fadeOutLeft {
+    0% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+  }

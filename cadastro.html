@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div id="cadastro">
+          <form>
+            <h1>Cadastro</h1>
+
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              nome="Usuario"
+              id="email-login"
+              placeholder="Digite seu e-mail"
+            />
+
+            <label for="nome">Nome</label>
+            <input
+              type="text"
+              nome="nome"
+              id="nome"
+              placeholder="Digite seu nome"
+            />
+
+            <label for="sobrenome">Sobrenome</label>
+            <input
+              type="text"
+              nome="sobrenome"
+              id="sobrenome"
+              placeholder="Digite seu sobrenome"
+            />
+
+            <label for="date">Data de nascimento</label>
+            <input
+              type="date"
+              nome="Data de nascimento"
+              id="data-de-nascimento"
+              placeholder="Digite sua data de nascimento"
+            />
+
+            <label for="Endereco">Endereço</label>
+            <input
+              type="text"
+              nome="Adress"
+              id="endereco"
+              placeholder="Digite seu endereço"
+            />
+
+            <label for="Complemento">Complemento</label>
+            <input
+              type="text"
+              nome="AdressComplement"
+              id="complemento"
+              placeholder="Digite o complemento"
+            />
+
+            <label for="Doador">Você é Doador?</label>
+            <input
+              type="boolean"
+              nome="Doador"
+              id="doador"
+              placeholder="Informe se é doador"
+            />
+
+            <label for="senha">Senha</label>
+            <input
+              type="password"
+              nome="password"
+              id="password-login"
+              placeholder="Digite sua senha"
+            />
+
+         
+            <br />
+            <input type="checkbox" nome="agreement" id="agreement" />
+            <label for="agreement" id="agreement-label">
+              Eu li e aceito os termos de uso</a>
+            </label>
+
+            <input type="submit" value="Cadastrar" onclick="validatior()" />
+
+            <p class="link">
+              <a href="index.html"> Já tenho uma conta </a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
