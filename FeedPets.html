@@ -8,102 +8,79 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
     </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
     <title>I LOVE PETS</title>
   </head>
   <body>
     <header>
-      <nav class="nav-teste">
-        <div class="area-logo">
-          <img
-            class="logo-img"
-            src="https://www.adrianaleivasveterinaria.com.br/images/Coracao-cachorro-e-gato.png"
-            alt="logo do projeto"
-          />
-          <a class="logo" href="/FeedPets.html">I LOVE PET</a>
+      <div class="container" id="nav-container">
+        <nav class="navbar">
+          <div class="col-3 text-center area-logo">
+            <a class="navbar-brand" href="/FeedPets.html">I LOVE PET</a>
+          </div>
+
+          <div class="col-6 text-center">
+            <ul class="nav-list">
+              <li><a href="/">Adotar Pet</a></li>
+              <li><a href="/">Cadastrar pet</a></li>
+              <li><a href="/">Fazer doação</a></li>
+              <li><a href="/">Duvidas</a></li>
+            </ul>
+          </div>
+
+          <div class="col-3 text-center area-logo">
+            <img class="img-user" src="" alt="logo do projeto" />
+            <a class="logo" href="FeedPets.html">Usuario</a>
+            <a class="sair" href="index.html">SAIR</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-6 mt-3 pesquisar-box">
+            <input class="pesquisar" type="text" placeholder="Buscar Pet" />
+            <a class="img-pesquisar" href="">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/622/622669.png"
+                alt="lupa"
+                width="25px"
+                height="25px"
+              />
+            </a>
+          </div>
         </div>
 
-        <ul class="nav-list">
-          <li><a href="/">Adotar Pet</a></li>
-          <li><a href="/">Sobre</a></li>
-          <li><a href="/">Duvidas</a></li>
-          <li><a href="/">Fazer doação</a></li>
-        </ul>
-        <!--------------------    EDITAR CLASSES   ----------->
-        <div class="area-logo">
-          <img
-            class="logo-img"
-            src="https://www.freeiconspng.com/thumbs/profile-icon-png/am-a-19-year-old-multimedia-artist-student-from-manila--21.png"
-            alt="logo do projeto"
-          />
-          <a class="logo" href="FeedPets.html">Usuario</a>
-          <a class="sair" href="index.html">SAIR</a>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <div class="pesquisar-box">
-        <input class="pesquisar" type="text" placeholder="Buscar Pet" />
-        <a class="img-pesquisar" href="">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/622/622669.png"
-            alt="lupa"
-            width="25px"
-            height="25px"
-          />
-        </a>
-      </div>
-      <div class="card-box">
-        <div class="card">
-          <img
-            class="icon-card"
-            src="https://blog.appegada.com/thumb/blog/1/780/500/1a09bacc2740e0f8e3c2b10bd5bf01ae.jpg"
-            alt="Foto do cachorro"
-          />
-          <div class="informations-card">
-            <h3>REX</h3>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            class="icon-card"
-            src="https://www.petz.com.br/blog/wp-content/uploads/2021/03/piercing-para-cachorro-2.jpg"
-            alt="Foto do cachorro"
-          />
-          <div class="informations-card">
-            <h3>Jubiscleudo</h3>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            class="icon-card"
-            src="https://uploads.metropoles.com/wp-content/uploads/2021/06/09110407/cachorro-fofo-usando-oculos_23-2148917262-1-600x380.jpg"
-            alt="Foto do cachorro"
-          />
-          <div class="informations-card">
-            <h3>Kall Marx</h3>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            class="icon-card"
-            src="https://i2.wp.com/www.portaldodog.com.br/cachorros/wp-content/uploads/2021/03/visa%CC%83o-do-cachorro-2.jpeg?resize=626%2C626&ssl=1"
-            alt="Foto do cachorro"
-          />
-          <div class="informations-card">
-            <h3>Reinaldo</h3>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            class="icon-card"
-            src="https://media.gazetadopovo.com.br/viver-bem/2018/11/dog3-600x459-0e01be20.jpg"
-            alt="Foto do cachorro"
-          />
-          <div class="informations-card">
-            <h3>Biro liro</h3>
+        <div class="row">
+          <div class="card-box">
+            <div class="col-2 card">
+              <img
+                class="img-fluid h-100 w-100"
+                src="https://blog.appegada.com/thumb/blog/1/780/500/1a09bacc2740e0f8e3c2b10bd5bf01ae.jpg"
+                alt="Foto do cachorro"
+              />
+              <div class="col-12 informations-card">
+                <h3 id="nome-pet">REX</h3>
+                <ul class="info-pet">
+                  <li>Labrador</li>
+                  <li>2 anos</li>
+                  <li>Ong Santa Luiza</li>
+                  <li>Avenida Brasil, 185</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </main>
+    <script src="js/scripts.js"></script>
   </body>
 </html>

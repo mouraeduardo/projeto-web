@@ -24,16 +24,13 @@ function validatior() {
     password == ""
   ) {
     alert("Preencha todos os campos");
-  } 
-  
-    else {
+  } else {
     alert("Cadastro completo!");
     senhaCadastrada = password;
     emailCadastrado = email;
     localStorage.setItem(emailCadastrado, senhaCadastrada);
     window.location.href = "index.html";
   }
-
 
   console.log(nome);
   console.log(sobrenome);
@@ -50,28 +47,23 @@ function validarLogin() {
   var email = document.getElementById("email").value;
   var senha = document.getElementById("password").value;
 
-  console.log(email)
-  console.log(senha)
+  console.log(email);
+  console.log(senha);
 
   if (email == "" || senha == "") {
     alert("Coloque todos os dados para logar");
   } else {
-
-
     var senhaArmazenada = localStorage.getItem(email);
 
     if (senhaArmazenada == null) {
       alert("Não cadastrado");
-    }
-    else {
+    } else {
       if (senhaArmazenada != senha) {
         alert("Senha incorreta");
-      }
-      else {
+      } else {
         alert("Entrar");
         window.location.href = "FeedPets.html";
       }
     }
   }
-
 }
